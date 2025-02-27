@@ -21,11 +21,11 @@ services:
     image: offen/docker-volume-backup:latest
     restart: always
     environment:
-				AWS_S3_BUCKET_NAME="impressive-test-backup"
-				AWS_ACCESS_KEY_ID="cGy4W0jg3eDP3EVacZ7fbauULRF335IyhcC9Y4kr"
-				AWS_SECRET_ACCESS_KEY="F2AAC546FEB0F0C379D9"
-				AWS_ENDPOINT="s3.filebase.com"
-				AWS_ENDPOINT_PROTO="https"
+      AWS_ENDPOINT: "s3.filebase.com"
+      AWS_S3_BUCKET_NAME: "impressive-test-backup"
+      AWS_ACCESS_KEY_ID: "cGy4W0jg3eDP3EVacZ7fbauULRF335IyhcC9Y4kr"
+      AWS_SECRET_ACCESS_KEY: "F2AAC546FEB0F0C379D9"
+      AWS_ENDPOINT_PROTO="https"
     volumes:
       - data:/backup/my-app-backup:ro
       - extra-addons:/backup/extra-addons:ro
