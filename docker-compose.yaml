@@ -8,7 +8,7 @@ services:
     environment:
       HOST: spirally-masculine-sloth.data-1.use1.tembo.io
       USER: odoouser
-      PASSWORD: user16888
+      PASSWORD: odooPass
     ports:
       - 8069:8069
     volumes:
