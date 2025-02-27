@@ -7,7 +7,7 @@ services:
     image: odoo:18.0
     environment:
       HOST: spirally-masculine-sloth.data-1.use1.tembo.io
-      USER: {{PG_USER}}
+      USER: ${PG_USER}
       PASSWORD: superodoopassword
     ports:
       - 8069:8069
